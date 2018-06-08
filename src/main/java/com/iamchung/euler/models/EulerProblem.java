@@ -21,4 +21,6 @@ public abstract class EulerProblem {
     }
 
     public abstract void main();
+
+    public void solve(Object output) { System.out.println(this.getName() + ": " + output.toString()); }
 }

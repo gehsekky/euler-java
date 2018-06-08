@@ -16,7 +16,7 @@ public class Problem extends EulerProblem {
     public void main() {
         List<Integer> primeFactors = getPrimeFactors(limit);
         System.out.println(primeFactors);
-        System.out.println(primeFactors.stream().max(Integer::compareTo).get());
+        this.solve(primeFactors.stream().max(Integer::compareTo).get());
     }
 
     List<Integer> getPrimeFactors(long num) {

@@ -17,7 +17,7 @@ public class Problem extends EulerProblem {
     public void main() {
         fibonacci(1, 2);
         System.out.println(evens);
-        System.out.println(evens.stream().reduce(0, (x, y) -> (x + y)).intValue());
+        this.solve(evens.stream().reduce(0, (x, y) -> (x + y)).intValue());
     }
 
     private void fibonacci(int prev, int curr) {

@@ -22,6 +22,6 @@ public class Problem extends EulerProblem {
         }
 
         int sum = multiples.stream().reduce(0, (x, y) -> { return x + y; });
-        System.out.println(sum);
+        this.solve(sum);
     }
 }
